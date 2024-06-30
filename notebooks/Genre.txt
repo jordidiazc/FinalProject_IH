@@ -1,0 +1,19 @@
+Nonfiction                      genre_1
+Historical                       genre_2
+Fiction (Narrative) General      genre_2
+Comic book                       genre_2
+Philosophy and Religion          Religión(2) / rest (1)
+Romance                          genre_2
+Children's books                 genre_2
+Fantasy                          genre_2
+Mystery and Suspense             genre_2
+Science Fiction                  genre_2
+Young Adult (YA) Literature      genre_2
+Biographies and Memoirs          genre_2
+Poetry                           genre_2
+Horror                            genre_2
+Other                             genre_1
+Literature (Classics)             genre_2
+Fiction (Narrative) Generaln      genre_2
+Satire and Humor                  genre_2
+Drama                             genre_3

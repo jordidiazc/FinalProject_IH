@@ -1,0 +1,31 @@
+You don't know what book to read this summer
+Don't worry, we'll help you
+
+What would you like to read?
+
+Could you be more specific?
+Give us 2 subgenres to make the search more precise
+
+Are you planning to read on the beach?
+Then we recommend a book with less than 300 pages and paperback book format
+
+
+Then are you ready for a big challenge? Or do you prefer short or medium book
+
+
+RETURN
+This is the description of your book
+('desc')
+This book is written by 'author' and has 'pages' pages.
+
+Do you want to find out what the book is or do you prefer to look for another option?
+
+Congratulations, you have found your book for this summer.
+('title')
+('img')
+('link')
+'totalrating' have rated 'title' with a rating of 'rating'/5
+Which means that it is better valued than 'worse_rating_percentage' of its category
+
+
+
