@@ -9,26 +9,32 @@ df = pd.read_csv(file_path)
 # Obtener promedio de ratings para usarlo como umbral
 avg_rating = df['rating'].mean()
 
-# Eliminar duplicados y agregar 'Other' al final
-genres_0 = df['genres_0'].dropna().unique().tolist()
-if 'Other' in genres_0:
-    genres_0.remove('Other')
-genres_0.append('Other')
+# Calcular la frecuencia de cada género y ordenarlos
+genres_0_counts = df['genres_0'].value_counts()
+genres_0_sorted = genres_0_counts.index.tolist()
+
+# Eliminar 'Other' si está presente y agregarlo al final
+if 'Other' in genres_0_sorted:
+    genres_0_sorted.remove('Other')
+genres_0_sorted.append('Other')
 
 # Insertar '-Choose the genre of your book-' al principio de la lista
-genres_0.insert(0, '-Choose the genre of your book-')
+genres_0_sorted.insert(0, '-Choose the genre of your book-')
 
 # Título de la aplicación
 st.markdown("<h1 style='text-align: center; color: #FFA500;'>You don't know what book to read this summer?</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; color: #008080;'>Don't worry, we'll help you</h2>", unsafe_allow_html=True)
 
 # Primera pregunta sobre el género
-selected_genre_0 = st.selectbox('What would you like to read?', genres_0)
+selected_genre_0 = st.selectbox('What would you like to read?', genres_0_sorted)
 
 if selected_genre_0 and selected_genre_0 != '-Choose the genre of your book-':
-    # Filtrar por género seleccionado y mostrar subgéneros
-    subgenres = df[df['genres_0'] == selected_genre_0]['genre_2'].dropna().unique()
-    selected_subgenre = st.selectbox('Could you be more specific? Give us a subgenre to make the search more precise', subgenres)
+    # Calcular la frecuencia de cada subgénero dentro del género seleccionado y ordenarlos
+    subgenres_counts = df[df['genres_0'] == selected_genre_0]['genre_2'].value_counts()
+    subgenres_sorted = subgenres_counts.index.tolist()
+    
+    # Mostrar subgéneros
+    selected_subgenre = st.selectbox('Could you be more specific? Give us a subgenre to make the search more precise', subgenres_sorted)
     
     if selected_subgenre:
         # Pregunta sobre si planea leer en la playa
