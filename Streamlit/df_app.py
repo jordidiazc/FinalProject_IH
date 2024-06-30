@@ -3,7 +3,7 @@ import pandas as pd
 import random
 
 # Cargar datos
-file_path = 'C:/Users/thege/OneDrive/Escritorio/IH/FINAL/Streamlit/df_web.csv'  # Ruta correcta del archivo
+file_path = 'C:/Users/thege/OneDrive/Escritorio/IH/FINAL/data/clean/df_web.csv'  # Ruta correcta del archivo
 df = pd.read_csv(file_path)
 
 # Obtener promedio de ratings para usarlo como umbral
