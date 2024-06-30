@@ -1,3 +1,4 @@
 streamlit
 pandas
-randome
+numpy
+matplotlib
