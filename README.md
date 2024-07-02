@@ -1,4 +1,5 @@
 SUMMER BOOK RECOMMENDER
+
 In this project, from a database and with the help of Streamlit I have created a website that recommends books. 
 In addition, I have carried out a data analysis of the database that has helped me later to be able to design the website in the most optimal way.
 
@@ -27,6 +28,5 @@ The conclusions of my analysis are the following:
 
 I hope you found my work interesting, if you have any questions do not hesitate to contact me.
 
-I leave you the link of the website below so that you can evaluate the result of my work.
-
-                        https://summerbookrecommender.streamlit.app/
+I leave you the link of the website below so that you can evaluate the result of my work.                                             
+https://summer-book-recommender.streamlit.app/
