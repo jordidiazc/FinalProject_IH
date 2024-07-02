@@ -28,5 +28,5 @@ The conclusions of my analysis are the following:
 
 I hope you found my work interesting, if you have any questions do not hesitate to contact me.
 
-I leave you the link of the website below so that you can evaluate the result of my work.
+I leave you the link of the website below so that you can evaluate the result of my work.                                             
 https://summer-book-recommender.streamlit.app/
