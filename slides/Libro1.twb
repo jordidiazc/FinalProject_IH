@@ -1,0 +1,1239 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0515.0324                               -->
+<workbook original-version='18.1' source-build='2024.1.3 (20241.24.0515.0324)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='df_web' inline='true' name='federated.162m3fh141jps2194c5pn0mk17yb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_web' name='textscan.0phxf6v098lr1z10xd6re0j4biku'>
+            <connection class='textscan' directory='C:/Users/thege/OneDrive/Escritorio/IH/FINAL/data/clean' filename='df_web.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0phxf6v098lr1z10xd6re0j4biku' name='df_web.csv' table='[df_web#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='author' ordinal='0' />
+            <column datatype='string' name='bookformat' ordinal='1' />
+            <column datatype='string' name='desc' ordinal='2' />
+            <column datatype='string' name='genre' ordinal='3' />
+            <column datatype='string' name='img' ordinal='4' />
+            <column datatype='string' name='isbn' ordinal='5' />
+            <column datatype='string' name='link' ordinal='6' />
+            <column datatype='string' name='pages' ordinal='7' />
+            <column datatype='string' name='rating' ordinal='8' />
+            <column datatype='string' name='reviews' ordinal='9' />
+            <column datatype='string' name='title' ordinal='10' />
+            <column datatype='string' name='totalratings' ordinal='11' />
+            <column datatype='string' name='genre_1' ordinal='12' />
+            <column datatype='string' name='genre_2' ordinal='13' />
+            <column datatype='string' name='genre_3' ordinal='14' />
+            <column datatype='string' name='genre_4' ordinal='15' />
+            <column datatype='string' name='genre_5' ordinal='16' />
+            <column datatype='string' name='pages_binned' ordinal='17' />
+            <column datatype='string' name='pages_binned_300' ordinal='18' />
+            <column datatype='string' name='genres_0' ordinal='19' />
+            <column datatype='string' name='worse_rating_percentage' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0phxf6v098lr1z10xd6re0j4biku' name='df_web.csv' table='[df_web#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='author' ordinal='0' />
+            <column datatype='string' name='bookformat' ordinal='1' />
+            <column datatype='string' name='desc' ordinal='2' />
+            <column datatype='string' name='genre' ordinal='3' />
+            <column datatype='string' name='img' ordinal='4' />
+            <column datatype='string' name='isbn' ordinal='5' />
+            <column datatype='string' name='link' ordinal='6' />
+            <column datatype='string' name='pages' ordinal='7' />
+            <column datatype='string' name='rating' ordinal='8' />
+            <column datatype='string' name='reviews' ordinal='9' />
+            <column datatype='string' name='title' ordinal='10' />
+            <column datatype='string' name='totalratings' ordinal='11' />
+            <column datatype='string' name='genre_1' ordinal='12' />
+            <column datatype='string' name='genre_2' ordinal='13' />
+            <column datatype='string' name='genre_3' ordinal='14' />
+            <column datatype='string' name='genre_4' ordinal='15' />
+            <column datatype='string' name='genre_5' ordinal='16' />
+            <column datatype='string' name='pages_binned' ordinal='17' />
+            <column datatype='string' name='pages_binned_300' ordinal='18' />
+            <column datatype='string' name='genres_0' ordinal='19' />
+            <column datatype='string' name='worse_rating_percentage' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>author</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bookformat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bookformat]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>bookformat</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[desc]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>desc</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>genre</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>img</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[img]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>img</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>isbn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[isbn]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>isbn</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[link]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>link</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pages</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pages]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>pages</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>reviews</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalratings</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[totalratings]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>totalratings</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre_1]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>genre_1</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre_2]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>genre_2</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre_3]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>genre_3</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre_4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre_4]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>genre_4</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre_5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre_5]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>genre_5</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pages_binned</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pages_binned]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>pages_binned</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pages_binned_300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pages_binned_300]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>pages_binned_300</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres_0</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genres_0]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>genres_0</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>worse_rating_percentage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[worse_rating_percentage]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>worse_rating_percentage</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='df_web.csv' datatype='table' name='[__tableau_internal_object_id__].[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]' role='measure' type='quantitative' />
+      <column aggregation='CountD' datatype='real' datatype-customized='true' name='[rating]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/thege/AppData/Local/Temp/TableauTemp/#TableauTemp_1whj4nu1ic5tkx0zmerua12s18vd.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/01/2024 08:31:40 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[author]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>author</remote-alias>
+              <ordinal>0</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41557</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bookformat</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bookformat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bookformat</remote-alias>
+              <ordinal>1</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>desc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[desc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>desc</remote-alias>
+              <ordinal>2</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>70349</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre</remote-alias>
+              <ordinal>3</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26626</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>img</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[img]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>img</remote-alias>
+              <ordinal>4</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>66679</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>isbn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[isbn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>isbn</remote-alias>
+              <ordinal>5</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64789</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>link</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[link]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>link</remote-alias>
+              <ordinal>6</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>70349</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pages</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pages</remote-alias>
+              <ordinal>7</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1654</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating</remote-alias>
+              <ordinal>8</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>406</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reviews</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reviews</remote-alias>
+              <ordinal>9</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1297</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>10</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>66753</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>totalratings</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[totalratings]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>totalratings</remote-alias>
+              <ordinal>11</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4169</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genre_1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre_1</remote-alias>
+              <ordinal>12</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>315</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genre_2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre_2</remote-alias>
+              <ordinal>13</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1193</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genre_3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre_3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre_3</remote-alias>
+              <ordinal>14</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1081</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genre_4</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre_4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre_4</remote-alias>
+              <ordinal>15</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1173</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genre_5</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre_5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre_5</remote-alias>
+              <ordinal>16</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1226</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pages_binned</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pages_binned]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pages_binned</remote-alias>
+              <ordinal>17</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pages_binned_300</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pages_binned_300]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pages_binned_300</remote-alias>
+              <ordinal>18</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres_0</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres_0]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres_0</remote-alias>
+              <ordinal>19</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>worse_rating_percentage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[worse_rating_percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>worse_rating_percentage</remote-alias>
+              <ordinal>20</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>70349</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='df_web.csv' id='df_web.csv_1011E84DA3E74A63966A578A17D1A4A3'>
+            <properties context=''>
+              <relation connection='textscan.0phxf6v098lr1z10xd6re0j4biku' name='df_web.csv' table='[df_web#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES' separator=',' text-qualifier='&quot;'>
+                  <column datatype='string' name='author' ordinal='0' />
+                  <column datatype='string' name='bookformat' ordinal='1' />
+                  <column datatype='string' name='desc' ordinal='2' />
+                  <column datatype='string' name='genre' ordinal='3' />
+                  <column datatype='string' name='img' ordinal='4' />
+                  <column datatype='string' name='isbn' ordinal='5' />
+                  <column datatype='string' name='link' ordinal='6' />
+                  <column datatype='string' name='pages' ordinal='7' />
+                  <column datatype='string' name='rating' ordinal='8' />
+                  <column datatype='string' name='reviews' ordinal='9' />
+                  <column datatype='string' name='title' ordinal='10' />
+                  <column datatype='string' name='totalratings' ordinal='11' />
+                  <column datatype='string' name='genre_1' ordinal='12' />
+                  <column datatype='string' name='genre_2' ordinal='13' />
+                  <column datatype='string' name='genre_3' ordinal='14' />
+                  <column datatype='string' name='genre_4' ordinal='15' />
+                  <column datatype='string' name='genre_5' ordinal='16' />
+                  <column datatype='string' name='pages_binned' ordinal='17' />
+                  <column datatype='string' name='pages_binned_300' ordinal='18' />
+                  <column datatype='string' name='genres_0' ordinal='19' />
+                  <column datatype='string' name='worse_rating_percentage' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Genres_0'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.162m3fh141jps2194c5pn0mk17yb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.162m3fh141jps2194c5pn0mk17yb'>
+            <_.fcp.ObjectModelTableType.false...column caption='df_web.csv' datatype='integer' name='[__tableau_internal_object_id__].[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:df_web.csv_1011E84DA3E74A63966A578A17D1A4A3:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='df_web.csv' datatype='table' name='[__tableau_internal_object_id__].[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]' role='measure' type='quantitative' />
+            <column-instance column='[rating]' derivation='Avg' name='[avg:rating:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[genres_0]' role='dimension' type='nominal' />
+            <column-instance column='[genres_0]' derivation='None' name='[none:genres_0:nk]' pivot='key' type='nominal' />
+            <column aggregation='CountD' datatype='real' datatype-customized='true' name='[rating]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.162m3fh141jps2194c5pn0mk17yb].[avg:rating:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.162m3fh141jps2194c5pn0mk17yb].[__tableau_internal_object_id__].[cnt:df_web.csv_1011E84DA3E74A63966A578A17D1A4A3:qk]</rows>
+        <cols>[federated.162m3fh141jps2194c5pn0mk17yb].[none:genres_0:nk]</cols>
+      </table>
+      <simple-id uuid='{4DAA2767-DA3F-455B-8FDA-6B3818BC7C55}' />
+    </worksheet>
+    <worksheet name='Pages'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.162m3fh141jps2194c5pn0mk17yb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.162m3fh141jps2194c5pn0mk17yb'>
+            <_.fcp.ObjectModelTableType.false...column caption='df_web.csv' datatype='integer' name='[__tableau_internal_object_id__].[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:df_web.csv_1011E84DA3E74A63966A578A17D1A4A3:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='df_web.csv' datatype='table' name='[__tableau_internal_object_id__].[df_web.csv_1011E84DA3E74A63966A578A17D1A4A3]' role='measure' type='quantitative' />
+            <column-instance column='[rating]' derivation='CountD' name='[ctd:rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pages_binned]' derivation='None' name='[none:pages_binned:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[pages_binned]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='real' datatype-customized='true' name='[rating]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.162m3fh141jps2194c5pn0mk17yb].[ctd:rating:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.162m3fh141jps2194c5pn0mk17yb].[__tableau_internal_object_id__].[cnt:df_web.csv_1011E84DA3E74A63966A578A17D1A4A3:qk]</rows>
+        <cols>[federated.162m3fh141jps2194c5pn0mk17yb].[none:pages_binned:nk]</cols>
+      </table>
+      <simple-id uuid='{89E6E6AC-680E-4711-A8E9-BC3701978049}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Pages'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.162m3fh141jps2194c5pn0mk17yb].[ctd:rating:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.162m3fh141jps2194c5pn0mk17yb].[none:pages_binned:nk]</field>
+            <field>[federated.162m3fh141jps2194c5pn0mk17yb].[none:pages_binned_300:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{306E96D0-8FC2-4B36-9ED9-E46BB1F5AF25}' />
+    </window>
+    <window class='worksheet' name='Genres_0'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='2' param='[federated.162m3fh141jps2194c5pn0mk17yb].[avg:rating:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.162m3fh141jps2194c5pn0mk17yb].[none:genres_0:nk]</field>
+            <field>[federated.162m3fh141jps2194c5pn0mk17yb].[none:rating:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{45DF1B86-31CC-4C52-94F2-3FAA0A1933D4}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Genres_0' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Pages' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAY4UlEQVR4nO3d+XMbZ37n8XejcRAEwBMgKVIURUoUKZE6qcuyJV+yPZPEmcRxUpOjZiap
+      JLtVmx92/wP/B/vjZqs2qeympvaoym4yVbEjz1iSLVEHSUk8xPu+D4AHCOJGd+8PsjyWRJkY
+      CwAl9PdVpV8g8HmebuCD52l09xeKYRgGQpiUZbcHIMRukgAIU5MACFOTAAhTkwAIU5MA5IPo
+      KrceDKMDGAbRcBjtN/puL8aD2/eIatkZ3stMArCLEpFNZmdnmFnwo+kplmanmJpZIKkbbK2v
+      MDE5xWowTDK6yeTEJMFwnEgwwMT4JKFY6tcNxYJ0PehjYnKaSDLFSHc3G9Ewy4sLTE7NEk/p
+      +JfnmZmaZH0rRjy8weTEozaSsS2mJke519FL3IQBsO72AMxsqe9L/t8olIcXOfnbv83Ir67w
+      cGqWSx/9hInOL6mvKaY/XEPNVgfjq0kob6TBmGHTVcdFlw9PlfubtqKhDab7b9DedwjX7BD2
+      Srh2fQafNsued/8dXf/0Xzlx7BiTcTclgSEmgjFU73FaCxaJ+vYSTqS+Y6T5S2aA3WRRqWs6
+      ysFqN4HRPqaVKo7Wl7LqX0VzV/Da0YPowNzSKuff/oAPzh/lSNsFShKLdE8sP9FUka+Ws+da
+      CK2sfvNYZV0TJ5qriSd0CkoqOdN2ElXbYMkf59xbP+TyuUYW1pO8duE05S5Hjjf+5aB+8skn
+      n+z2IMwqONfPL6514alu4tJrrayMDOLw1nCg6SgFwUnu3usm6qnnozcOca97ANXjwxbxM7ua
+      4MjBKm58+SUDAwOEKMQSWaJ7YJUPfnQZBzoVtVXYrB58xXZsxdUUqkn21daSxMWJ5kr6eoew
+      lddyqt7D1Rv3KfLtpbFxPzaTfSQqcinE7tmYH2GJCpprSp78j1SUm1evML2h8O4PfkBlkQPl
+      qb819BSRaBwAq82Bwy6r2e9j1wLwuFtFefqlFSJ3dm3C03UdmXzEbjPZik+IJ0kAhKlJAISp
+      SQCEqUkAhKlJAISpZeTsiZaM0dN5C39I4+DxMxSsj9MzE6Coop4jdR4UpZT4+jj4Gqny2DPR
+      pRAZkZETYYauk0yliAYmGd4oxBZd4ejJU1gtCktLEyS3YHErSduxQ6iWRye+NE1DURQslvyf
+      hP7bv9ziX9sfZrTN//HJT/AUFmS0TTPKyAygWCyszQ7SN7HKwWOn0Zbn+OLzK9hL99JUbXD7
+      9gAnL/8A1aKgaRq6rqPr+qO/NcGZ4KXVICMzKxltMxaL47Dm/4dHtmUkAKnkFhb3Ps63ldI9
+      Mk999R5erz9Cz72HJG17ePPyZaYmhwmXt+Gyq6iqaqoZQM3CNtrsdux2WU6+qIwEwKJYWV0Y
+      YDWu0nrsKOrWIj09D6k7epwyp46iODl1rIHVSBKXXc1El0JkRGYCYC3g8Mmzv36gsI7XK+qe
+      epaXqkx0JkQG5f/6Q4jvIAEQpiYBEKYmARCmJgEQpiYBEKYmARCmJgEQpiYBEKYmARCmJgEQ
+      piYBEKYmARCmJgEQpiYBEKYmARCmJgEQppaRABi6xvLcJCNjk0QSGlp8i9GRUTajSRKJKImE
+      RjISZMuMP0IlXmoZCYCupYjEEqiJNXpH5+nvvo+GxoPuftbWFllfC9H3cAhdyqGLl0xG7glW
+      bQ5c1hR905scaD3IetxNU2MjerCHSDJC350+Dl+4hMdh/aYsimEYGIZhirIo2tclYDIpmUiS
+      SEiBgReVkQAYhkFZTSNtTiejS2ugJTEMgwTgsTlpaW4g4F/FqC7BYrFgsVhMVRYlG9tos1mx
+      2WwZb9dsMhKAZHyNu1/dI6JrVBw4gc9h5bN/+xxfXQsFqoJzzwGc66PMBCLs97mARwWxHv/L
+      d1nZQpPsu2zLSADsBeVcfP/9bz2yh73NTz3JezwTXQmRUfm//hDiO0gAhKlJAISpSQCEqUkA
+      hKlJAISpSQCEqUkAhKlJAISpSQCEqUkAhKlJAISpSQCEqUkAhKlJAISpSQCEqUkAhKmlGYA4
+      kyMTRBLPKWtiGITWlhmfmCYSTxHbXGV0dJTpxQCJROzrsighws/7eyF2SZq3RCqE/FO0371J
+      SVUz7713Fse3/ldLxpmbX0C1Qt8IuGLzWEsrsSgKa2sLKJSxMDNMw9G2rGyEEN9X2vcEJxMJ
+      EtEtVgJrPF3kw2Jz0NxylPnxQdTiIvzD/STj4G6ugGiUzo4bNJ57naKCR2VRDMP4pjSKGW7s
+      zkZZlFRSyqJkQpoB0HFXNvL7rceJWTwUPP3fhsbEyBAF3joayj3Ulr9NMhGn514v1c1VNB6s
+      ZWN1HaOm9IkSIVIW5fuzWqUsSiakGYAo97uGSIT62TKq+enf/Bnub/1vMrpJ/8OHODzzrNQd
+      oSA8yYw/gr2sFqdqxVV9CNf6sJRFyWij5th32ZZmAApQouOkvEeotyvPHDnbXWX87sc//tYj
+      tRx+ugnfye8/SiGyJM0A2Ljwwe9TvbeK6clZ7NkdkxA5k+bidJPrX9zHouj0tncSzu6YhMiZ
+      NANQwuG6FH/39/+IvbEFT3bHJETOpLkEsnD63Y84pSW4f/UOW0BRVoclRG6kXxvU0EimoO29
+      S3L9hMgbaQYgyZX//Q9Mh3RK9p3g4x+cQ07BiHyw44e5rmskEkHWUlX87Cd/in15Wg6CRd7Y
+      cQbYWBjm08/vsBra5Oc/X0Fx1z57JliIV9SOM0DZ3iP82V/8hEOVYHEfoqrQeOZaICFeVWke
+      A2wSTLpQY1uEwkESILOAyAtpnwdobaojHJvEd/KsfAUq8kaaAYgwOxGgbO9+vE6VVHbHJETO
+      pBkAOw3NzRQrQa5d7yCR3TEJkTNpBiBJX8cdNtVSTp9szswv6wnxEkgzAFb27K0iMDvKwOC0
+      LIFE3kj7nuCmM+9w7n0Psc1lFqf8HNjvy+7IhMiBNANgx+t7dBdANLjM5GzhKx2AcDTBf/5f
+      1zPa5rmWOt4725TRNkX2ZWY5bxhsBQMEgnEq91ThIMHsop/yyhocagqwoaSiJFQnhfbdv4oo
+      nkzxT9d6Mtqm02GTALyCdgxAPBxCs1qJRzRKSt043KVUVTx5T5iWjDMzPYOiGvRuarhiM+jO
+      YqYWgzTtd6NQxuLsMPtb2yjM2qYI8ZvbMQD+0QfcnFnCPx7n0jvHsBUU09Rc/cRzLDYHh4+e
+      YGFiEJvTQ2jJxYmWFga6eoimogx2tnPg9HmKnyqLAuzKjd3JZDLjbeq6/tx29SyVRUkm5fu4
+      F7XjHqxuPcsp9Q6fjY/h9/spcCnPXAuk8Kgsir2slgZfEfcXxjAwSAGq6qC+bg/B9SDG3vJn
+      yqLsRgCs1sy/cRRFQVW3X94pWSiLoqrW5/Yn0rfjO2F9YYz29kEUNcXY2Bh2d5xTrx174jmJ
+      cJC+h30UeObx1x3BVwiffXaFsr2H2aOqOGubcK8OMx0IU/9UWZTdqAuUjdB917ZkI+KKxRw1
+      lbJtxwCU72vlz/99Df/n5x18/OO3+Oz/XsF46jl2dzk/+viPv/VILXUtTz3Jd+qFBytEpqX5
+      EeKhxDbPP/z3f2RJs0tZFJE30lwMW3n/D3/G1laYApdbLoUQeSPtReTCWA+jC0GmZ2aeWQIJ
+      8apK88M8zNWbX6Abx3BY1qj8Wd0TtUGFeFWlOQO4OH3sGBtr/ZS2tMmbX+SNHWeAWGiVyZkl
+      9IIa3v1hDVa7g1Q6fyjEK2DHGUBLxtlYm+XTX1xjLbDMF7+8QTwXIxMiB3YMgKusmtcuXqSy
+      SMWwKFjkCFjkkbSPAT76k4/wFBbx4Y8/xJXdMQmRM2kv5Qs9xXh9SbzFcggs8keaAYjx87/9
+      L7iqa5hfU/nrv/yDJ34lUohXVdq/E2zYfLSdOkWpkiLzFxMLsTvSPgY4e6ae/v5RGs+04czu
+      mITImTQCkGJu/D7X2mfYv7+GsY57Uh1a5I00jgE0AotLBFZXmJktpenCeTkTLPJGGjOAgxNv
+      /JALR0uYmppiqG+YWPbHJUROpH0x3Fq8kr/6q/dAefZ3goV4VaV9P0BosZe/+/tZ3CX7+b0/
+      fO+J6g6GrrEwNcRipJDTrfUsjfbwYGIJT0U9rfUlKEoRyc1ZtJL9VHpsWdkQIb6PNAPg5vf+
+      +A/Y0Itx2vRnvwUyDJwlJVi3Hi2OFjdTXH7vfWwWhaWlCbRojLn1JG01cgmdeLmk+Y7c4spn
+      /0xcPYHPFuTin370xG8EKKqVsrJS5uYWAXAqEa7+8nPcFfU0eOO03xzg5Hs/xGpR0DQNXdd3
+      tSxKIpH5+taapj23XS0LZVGSiQSJhFSFeFFpBkDFgsbEQAcbDQe4vMOzS/ccoPFYOXdudBDf
+      U8PFt99kanKEfd5TOKwqqqqiadquVYWw2zNf3ldVVez27e+WVrOwjTa7/bn9ifSlGQAHv/Px
+      n9M6vULFvv3P3BSvJWLcu3ODtYhBXFGoL9O4dm2QhqNteN0GiuLilNsgsBmnpkxOo4mXR9rX
+      AnV9dYuVSJhPr3bxH/7jT584CFbtBZy99METf3G5pvGpNvZQ80JDFSLz0gyAjbpDTXiTMcLr
+      A/L7ACJvpBkAg0h4i6gOp9+9iCe7YxIiZ9L+kbzx6TBtp44TGBxkK7tjEiJn0pwBCtiYv8+n
+      n20w7dd4LbtjEiJn0g7AH/3FT5mZC3LxnWopjSjyRppLoBi/+J9/yxft41z750+JZHdMQuRM
+      mgFIoKtFJPxzrG5JURSRP3ZeAhkppoYmcVfsw1NuIZFySG1QkTd2nAFWRjr5sm+OImWTgeEp
+      jOIKuSVS5I0dAxAMhPBVVVHbfBA97uLUoT0yA4i8sWMAKg40oAWmuf9ggYOHixkYnJAzwSJv
+      7HgMUFx1kA8/OpiLsQiRc3J3ozA1CYAwNQmAMDUJgDA1CYAwtcwEwDBIxMJshB5dJaQnYywu
+      LhJJaKRSCVIpnVQ8QiyZ+ZvDhXgRGQmAriWYGO+nd2AKgKGeTuYX5+l8MEAgMMdqIMRAby8R
+      CYB4yWSkUI/F6qC5pZVE7yJgEFcKaTt5goGuHqKpGGPdd9h79BSlTus3JVF2syxKKpX5U3m6
+      rpNMbl84Xs9CWZRUKvXc/kT6slKpSjc0AFKAqtqo9JWyFQpj4HumFMpulEXJRp+KoqCq29fp
+      USyZD7lqsTy3P5G+jATgUVmUqwxNhYgrCmUOjU8/+zeKq5uosqhU1R8h4h9iOuCj3udCURQM
+      w9i1ukDZCsDz2lXIfAAUi2VX9l2+yUgAHpVF+R3OXnr8SAMHjj71pIrTmehKiIySjxBhahIA
+      YWpSrjnPXO2d5XrffEbb/E8/OkGpuyCjbb4sJAB5ZiMcZ9ofymibSS1/z9/IEkiYmgRAmJoE
+      QJiaBECYmgRAmJoEQJiaBECYmgRAmJoEQJiaBECYmgRAmJoEQJiaBECYWlauBk1Gt1gLbqEW
+      uChxOwArih4nZXHgsErmxMsjKwEY7esmbHPjLqkgFfOjUM7K3CDVh9skAOKlkpUAhGJRHI5i
+      yktL0Lem6e/roOrwCcoKbd+URDEM45sb43Mt52VRjMxfT689pyxKNkqwaCktb0uwZCUArSdO
+      E9oKM9LTQ22jl9ISD5FwBINfV0/QdT3vqkI8tyxKlqpCbNdfNj5QLHlcgiUrAZgZ7WPGH8Hi
+      qcKmqlQ3tBLxDzId8JqzLEqW3pTb9ZeNvhTL7rxOuZCVABxuu8Thpx+sPJONroR4IfkZayHS
+      JAEQpiYBEKYmARCmJgEQpiYBEKYmARCm9tKURvxV7xwPp1cz2ubf/NZRrKpkXDzfSxOAhbUw
+      /bPrGW1TN4yMtifyj3w8ClN7aWYA8WrS9MzOsooClhxeISwBEC/kX0c3MtpejcdGW7U7o21+
+      F1kCCVPLSgC0eIjhoWGCkSTxeIR4XCMZDhKKa9noTojvLStLoIfdD3CWV9Ld08+h+iIslDI/
+      PcLB4/JLkeL720pohBKZveMtCwHQMWxuGg8cJLXWTTQZofdWLy0X38TjyM+7ikRurIRTjK3H
+      M9pmFpZACqlUEt3QiaNgsxVyrPUgq8sBDOR7efFyyUoA9hTbuHLll6TcXgpUG0WVDexzR5gJ
+      RDLfnRAvICvHADVNp6hpeupB7/FsdCXEC8n5eYDHJVEel+8wvr5coaq4gMM1xRnty9B1tG2+
+      eLIocL5lX0b72ldZjLZdZ8D+PWVcOLo/o/1ZMLbtz+spoKW2JKN9WRWeu23eAktGF7Zum/Lc
+      vhwWg1J7Zk+SKYaR2wtmHtcDehyAXFUbSKVSWK25yXuuty2XcrkfH79PslmSJeczgKIou1IW
+      JZd9Pf5MyccA5HI/5qJ2VM5ngMced5urynC5rEKX623LpXzbj+onn3zySdZa/w6PZ4LfxMbC
+      GDfuPsDq8VHicvzG/W1LTzE/NcrkSoQq79fHIEaKxZkxxhc2qfQWszTZT8f9AVR3GY7EKu23
+      7rKRtFHhLd625tu3t80wDJanBrjT1UvC5sGthLl18zZB3YmvyEZvxy1GF0NUVXmxWhSS0XXu
+      tt9idDZAWUU5s4P3eDA4TbGvisjyOLe7etAdxZR6nGy3SYZhMDfUzULMRrEa5U77bfxxK1Wl
+      Tgbu3WJwdp3KygpsqoKhp+j86goPh2cpKC1jdbKfrr4xinxVJNdmuNVxn4TqpqzY9U1fT+xH
+      Q2O0p4Pu4RnKK6vwT/TR2TNKSVU1WnCem+1dpAqKKSsqRAH6O6/z4OEw49OLlJYUcv/uHZZC
+      BpXlhfR33WFo2k+5r+Kb+rE7vUe2Vue4dfsu/ohCZZmTh523GFnYpKrSx9JYNx09oxT5qim0
+      q8RjUSyq7Zl99grN0SmGJ1e4+MY5ZsdHMnfgZaSwuipQ4t+6qEvXsDi9WJIhjFSCKX+UixfP
+      Epga5eHoNCcvvIknMstyJL1RqC4vb755ltDyMqPjExw5d5HkwjhLK1Movmb2u1IsrG8BYLEW
+      cPz8JQ557SzPDrGkV3HpzGHGhh4yObfJhUuvsz4/RkLbvu9UJMD44ibxUIiZyXHqT7yGsjJD
+      YG2aqPsgTV4bsyvrX29mHFtxHR988A57CyIsxIt5+42TjA70MT7l5/zFi8QCU4Sfc/Y1ERhl
+      ybKXt944S2FqnflIAW+cPcDwwCRDY/OcvXie4OwEsa//vOXMW1x+6wKVPh+B+Skajr9Otb7M
+      yMI8ycJ6Th8oZnTOn+YLB1NT07Seu4R9fZEl/zRGeTP1Hp15/wyTARtvnG5iYmwcgKHeB8S3
+      2YxXKAAJHM5yHA4nbtVCxsrbqgVUVpSiAHoqwdhgHyshjcqKMiwKKKoNn1Pn+pe3WQgEqPJ5
+      6bx5jfH5RTa3dh6FoiiUlrgYH56kumE/VtWO2+mgqthBMBzDU+bFV+Zmc32Nh319hDUbs/2d
+      DCyF8VY14I5M8mX7PfyhGJWlKjeu3WBiaRVN2+5NqTM6Ms3hlsZHL6xixeMupLrYwXoojMdX
+      SWlpEZHQGgMPe9mIxViZHOPzX11nIeakKLXI1a86Wdncotrn5Ob1LxlbCJBKbv+tTHA5SHB1
+      hC+u3WRueZOishIKPHuw6+tYnIW4C1yUuGB+apyhyQUMw2B1cZbiyr3sqaxg6N5XjMzMEE6V
+      kFgd5E7PIIG1rbRfugpvGQ/ar7JiOClIRPGUefGWuYlsbuDyVuFwFqFoYe7dvs6D3od8cf0u
+      saf22yt0ObSDWMRPLFbNZkrPysAVi0ppuQ9HgfXbD7Kv+SS1DRt09i7gramjet9+Hty8ga/E
+      tmObhqEzOjxGzcEjFDntBKfjbIajzG/EqK0oYtm/gpLYxOOtxeUpQElEqD16Ft/8IDOBMC1t
+      b5DYnKV3LklVw36q98e41TWAdbsy88kQc3OLTExPsam5aK0vJ7gZZnEjRn1NGRNLCwTsGzgL
+      vZQ6PDgNC6cuv491Y5rxQJBjx89zKLbMnaEg3n2NvFPbQEdnLw7H9nu7yFdEhf0ATUUhxhdW
+      iRkJoiUJ4mo5jsgym5EQayE4WFuKZlgxtCTz6wmO1rlBc/Dm2zX0tV9nz54SSmvfZG2qn2Vr
+      +l+FLywFOH3xMgv3vmJNqSXsX0ZNbeIqL2dtbJ5oRQW66ubMa21YVTuH2s5R8NQXSq9QAFRa
+      m2ppv9VFS9trmau3HNvgq9tdbEXiJOwltDXvg/gm7V/eILgVI6K6qbZuMrQQ5sTpNvTNZa53
+      D1PbfJJSexrtG7C1tsDtr5bxlNdx8kgT9+/corzxBJUVbtbmu1iy+mir8GKzKMRDfjrbO0jZ
+      S2hrK2O87w5LMSfnzp9kY26Q3vEALadOY1O32QO2Yt7/8EMS0RCrm0l8RRa6Ou7i3tdCeVk5
+      q7OdTMWLOXOgCruqoKeiDHfdJai5aGurZ3rwHjMbCudfP0NoeZT7Q4s0nWjDadt+bzsqDlG2
+      1MWDFQttZ06yNTfEre4Fzp4/jRp10XGni/rWNkpLilCAVGydiuoGrApEw6t0dD2kvL4Vny1F
+      T0c7UUclbSe8ab90jY0H6Lp9ncLKA5yq2ctwdycLqpfTvloKI0Fud09x+vxZAFpOnmG728P/
+      PxwxpAJAUJGwAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
